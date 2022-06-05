@@ -18,7 +18,7 @@ export interface ISettingsProps {
     inputStyle: React.CSSProperties;
     labelStyle: React.CSSProperties;
     mask: string,
-    maskPlaceholder: string,
+    maskChar: string,
     alwaysShowMask: boolean,
 };
 
@@ -70,7 +70,7 @@ const Mask: React.FunctionComponent<IInputMaskProps> = (props) => {
             <InputMask
                 name={name}
                 mask={settings.mask ? settings.mask : '99/99/9999'}
-                maskPlaceholder={settings.maskPlaceholder ? settings.maskPlaceholder : '##/##/####'}
+                maskChar={settings.maskChar ? settings.maskChar : '#'}
                 alwaysShowMask={settings.alwaysShowMask ? settings.alwaysShowMask : true}
                 value={settings?.value}
                 className={settings?.className}
