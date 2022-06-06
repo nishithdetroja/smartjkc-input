@@ -1,7 +1,7 @@
 {
-  "name": "smartjkc-mask",
+  "name": "smartjkc",
   "version": "0.0.1",
-  "description": "A simple mask input",
+  "description": "A custom input",
   "scripts": {
     "rollup": "rollup -c"
   },
