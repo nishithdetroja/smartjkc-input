@@ -12,17 +12,22 @@ export interface IInputMaskProps {
 };
 
 export interface ISettingsProps {
-    label: string
-    value: string,
-    className: string
+    id: string;
+    label: string;
+    value: string;
+    className: string;
     inputStyle: React.CSSProperties;
     labelStyle: React.CSSProperties;
-    mask: string,
-    maskChar: string,
-    alwaysShowMask: boolean,
+    mask: string;
+    maskChar: string;
+    alwaysShowMask: boolean;
+    disabled: boolean;
+    readOnly: boolean;
+    tabIndex: number;
+    placeholder: string;
 };
 
-const Mask: React.FunctionComponent<IInputMaskProps> = (props) => {
+const SmartjkcMask: React.FunctionComponent<IInputMaskProps> = props => {
 
     const { name, settings, onChangeEvent, onBlurEvent, onFocusEvent, onKeyUpEvent, onKeyDownEvent } = props;
 
@@ -68,7 +73,12 @@ const Mask: React.FunctionComponent<IInputMaskProps> = (props) => {
         <div>
             <label style={{ ...labelStyle, ...settings.labelStyle }} htmlFor={name}>{settings.label ? settings.label : 'Label'}</label>
             <InputMask
+                id={settings.id ? settings.id : name}
                 name={name}
+                tabIndex={settings.tabIndex ? settings.tabIndex : undefined}
+                disabled={settings.disabled ? settings.disabled : false}
+                readOnly={settings.readOnly ? settings.readOnly : false}
+                placeholder={settings.placeholder ? settings.placeholder : ''}
                 mask={settings.mask ? settings.mask : '99/99/9999'}
                 maskChar={settings.maskChar ? settings.maskChar : '#'}
                 alwaysShowMask={settings.alwaysShowMask ? settings.alwaysShowMask : true}
@@ -85,4 +95,4 @@ const Mask: React.FunctionComponent<IInputMaskProps> = (props) => {
     );
 };
 
-export default Mask;
+export default SmartjkcMask;
