@@ -1,0 +1,46 @@
+.mainmenu, .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.mainmenu a:hover {
+      background-color: #3EB489 !important;
+      color: white;
+}
+.arrow{
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  position: relative;
+  bottom: -5px;
+  left: -12px;
+  transition: 0.4s ease;
+  text-align: left;
+  transform: rotate(45deg);
+  float: right;
+}
+.arrow:before, .arrow:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.4s ease;
+}
+.arrow:after {
+  position: absolute;
+  transform: rotate(90deg);
+  top: 4px;
+  left: 4px;
+}
+.active .arrow {
+  transform: rotate(135deg);
+}
+.active .arrow:before {
+  transform: translate(0, 0);
+}
+.active .arrow:after {
+  transform: rotate(180deg) translate(10, 0);
+}
+  
