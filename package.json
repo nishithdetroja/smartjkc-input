@@ -1,7 +1,7 @@
 {
   "name": "smartjkc",
-  "version": "0.0.2",
-  "description": "A custom input",
+  "version": "0.0.3",
+  "description": "Smartjkc provide various type of inputs so you can use easy",
   "scripts": {
     "rollup": "rollup -c"
   },
