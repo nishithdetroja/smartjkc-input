@@ -1,6 +1,6 @@
 {
   "name": "smartjkc",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Smartjkc provide various type of inputs so you can use easy",
   "scripts": {
     "rollup": "rollup -c"
@@ -31,10 +31,12 @@
     "react-router-dom": "^6.3.0"
   },
   "dependencies": {
+    "@types/react-datepicker": "^4.4.2",
     "@types/react-input-mask": "2.0.4",
     "@types/react-numeric-input": "^2.2.4",
     "axios": "^0.27.2",
     "react-currency-input-field": "^3.6.4",
+    "react-datepicker": "^4.8.0",
     "react-input-mask": "^2.0.4",
     "react-numeric-input": "^2.2.3"
   }

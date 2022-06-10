@@ -1,0 +1,6 @@
+.react-datepicker-popper{
+    width: max-content;
+}
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle{
+    transform: translate(70px, 0px) !important;
+}
