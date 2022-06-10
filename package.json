@@ -33,6 +33,7 @@
   "dependencies": {
     "@types/react-input-mask": "2.0.4",
     "@types/react-numeric-input": "^2.2.4",
+    "axios": "^0.27.2",
     "react-currency-input-field": "^3.6.4",
     "react-input-mask": "^2.0.4",
     "react-numeric-input": "^2.2.3"
